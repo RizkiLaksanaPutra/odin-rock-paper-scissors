@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="finalScore"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="container">
+      <div class="text-container">
+        <p id="title">Choose your move!</p>
+        <p id="description">First to score 5 points wins the game</p>
+      </div>
+      <div class="result-container">
+        <div class="choice">
+          <p id="playerChoice">❔</p>
+          <p>YOU: <span id="playerScore">0</span></p>
+        </div>
+        <div class="choice">
+          <p id="computerChoice">❔</p>
+          <p>COM: <span id="computerScore">0</span></p>
+        </div>
+      </div>
+      <div class="rps-container">
+        <button value="rock" class="button">
+          <p>✊</p>
+        </button>
+        <button value="paper" class="button">
+          <p>✋</p>
+        </button>
+        <button value="scissors" class="button">
+          <p>✌️</p>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <p>Project by Rizki Laksana Putra</p>
+    </footer>
+    <div class="modal">
+      <div class="modal-content">
+        <p id="result"></p>
+        <button id="playAgain">Play Again</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
